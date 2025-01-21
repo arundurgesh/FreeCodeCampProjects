@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Favorite Sport Survey</title>
+</head>
+<body>
+  <h1 id="title">Favorite Sport Survey</h1>
+  <p id="description">"Score big by sharing your passion for sports in our fun and quick survey – because your favorite game deserves the spotlight!" 🏆</p>
+  
+  <div class="form-container">
+    <form id="survey-form">
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id="name-label">Name:
+          <input id="name" type="text" name="name" placeholder="Enter your name here" required />
+        </label>
+        <label id="email-label">Email:
+          <input id="email" type="email" name="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label" for="number">How many years have you been playing sports?
+          <input id="number" type="number" name="sports-experience" placeholder="Enter years" min="0" max="100" required />
+        </label>
+        <label for="dropdown">Age Group:
+          <select id="dropdown" name="age-group" required>
+            <option value="" disabled selected>(select one)</option>
+            <option value="under-18">Under 18</option>
+            <option value="18-30">18–30</option>
+            <option value="31-50">31–50</option>
+            <option value="51-above">51 and above</option>
+          </select>
+        </label>
+        <label for="player-name">Your Favorite Sports Team or Athlete:
+          <input id="player-name" type="text" name="favorite-player" placeholder="Enter the name here" required />
+        </label>
+      </fieldset>
+
+      <!-- Sports Frequency -->
+      <fieldset>
+        <legend>How often do you watch or play sports? (required)</legend>
+        <label for="daily">
+          <input id="daily" type="radio" name="sports-frequency" value="daily" class="inline" required /> Daily
+        </label>
+        <label for="weekly">
+          <input id="weekly" type="radio" name="sports-frequency" value="weekly" class="inline" /> Weekly
+        </label>
+        <label for="monthly">
+          <input id="monthly" type="radio" name="sports-frequency" value="monthly" class="inline" /> Monthly
+        </label>
+        <label for="occasionally">
+          <input id="occasionally" type="radio" name="sports-frequency" value="occasionally" class="inline" /> Occasionally
+        </label>
+      </fieldset>
+
+      <!-- Favorite Sport -->
+      <fieldset>
+        <legend>Favorite Sport</legend>
+        <label for="football-soccer">
+          <input class="inline" id="football-soccer" type="checkbox" name="favorite-sport" value="Football/Soccer" required /> Football/Soccer
+        </label>
+        <label for="basketball">
+          <input class="inline" id="basketball" type="checkbox" name="favorite-sport" value="Basketball" required /> Basketball
+        </label>
+        <label for="cricket">
+          <input class="inline" id="cricket" type="checkbox" name="favorite-sport" value="Cricket" required /> Cricket
+        </label>
+        <label for="tennis">
+          <input class="inline" id="tennis" type="checkbox" name="favorite-sport" value="Tennis" required /> Tennis
+        </label>
+        <label for="baseball">
+          <input class="inline" id="baseball" type="checkbox" name="favorite-sport" value="Baseball" required /> Baseball
+        </label>
+        <label for="swimming">
+          <input class="inline" id="swimming" type="checkbox" name="favorite-sport" value="Swimming" required /> Swimming
+        </label>
+        <label for="other">
+          <input class="inline" id="other" type="checkbox" name="favorite-sport" value="Other" required /> Other
+        </label>
+      </fieldset>
+
+      <!-- Preferred Way to Enjoy Sports -->
+      <fieldset>
+        <legend>Preferred Way to Enjoy Sports</legend>
+        <label for="watching-live-matches">
+          <input class="inline" id="watching-live-matches" type="checkbox" name="preferred-way" value="Watching Live Matches" required /> Watching live matches
+        </label>
+        <label for="streaming-online">
+          <input class="inline" id="streaming-online" type="checkbox" name="preferred-way" value="Streaming Online" required /> Streaming online
+        </label>
+        <label for="playing-with-friends">
+          <input class="inline" id="playing-with-friends" type="checkbox" name="preferred-way" value="Playing with Friends" required /> Playing with friends
+        </label>
+        <label for="video-games">
+          <input class="inline" id="video-games" type="checkbox" name="preferred-way" value="Video Games" required /> Video games
+        </label>
+      </fieldset>
+
+      <!-- Updates on Sports Events -->
+      <fieldset>
+        <legend>Would you like to receive updates on sports events? (required)</legend>
+        <label for="yes">
+          <input id="yes" type="radio" name="updates" value="yes" class="inline" required /> Yes
+        </label>
+        <label for="no">
+          <input id="no" type="radio" name="updates" value="no" class="inline" /> No
+        </label>
+      </fieldset>
+
+      <!-- Additional Comments -->
+      <fieldset>
+        <label for="comments">Additional Comments:
+          <textarea id="comments" name="additional-comments" rows="4" cols="50" placeholder="Share your thoughts, tips, or favorite sports moments!"></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </div>
+
+</body>
+</html>
